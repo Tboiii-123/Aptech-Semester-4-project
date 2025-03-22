@@ -1,0 +1,224 @@
+
+{% extends 'base.html' %}
+    
+    {% block title%}
+            Login
+    {% endblock%}
+    
+
+    
+{% block css%}
+        
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">  
+   
+{% endblock%}
+
+
+
+
+{% block content%}
+
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+{% endwith %}
+
+{% include 'nav.html' %}
+
+
+    
+
+<!-- Section 1 -->
+
+<section class="section1">
+
+        
+        <img src="../static/img/my_image.png" alt="" width="100%" id="background">
+
+        
+        
+        <div class="container">
+            
+            <img src="../static/img/Avatar.png" alt="" id="profile">
+            
+        
+        </div>
+
+        
+        
+        
+</section>
+
+<!-- Ends Here -->
+
+
+
+
+<!-- Section2 -->
+
+
+<section class="section2">
+
+        <div class="form">
+
+
+            <div class="mb-3 row">
+                <label  class="col-sm-4 col-form-label ">First Name</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="inputPassword" value="{{user_data.firstname}}">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="number" class="col-sm-4 col-form-label ">Last Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="number" value="{{user_data.lastname}}">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="name" class="col-sm-4 col-form-label ">User Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="name" placeholder="John Doe" value="{{user_data.username}}">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="email" class="col-sm-4 col-form-label ">Email</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" name="email" value="{{user_data.email}}">
+                </div>
+            </div>
+            
+            
+                    
+
+            <div class="button">
+                <button class="btn btn-danger btn-lg"><a href="{{url_for('index')}}" style="color: white;
+                    text-decoration: none;">Cancel</a></button>
+                
+
+              
+            </div>
+            
+        <aside id="personal">
+
+        
+          <div>
+            <p>Total Games Played</p>
+            <p>{{user_data_game.games_played}}</p>
+          
+          </div>
+
+          <div>
+            <p>Total Score</p>
+            <p>{{user_data_game.total_wins}}</p>
+          
+          </div>
+
+          <div>
+            
+          <p>Total Attempts</p>
+          <p>{{user_data_game.total_attempts}}</p>
+          
+          </div>
+          
+          
+          
+          
+        </aside>
+        
+
+            
+        </div>
+
+        
+
+</section>
+
+<!-- End Here -->
+
+
+<!-- Section3 -->
+
+
+
+<section class="section5 container">
+
+
+    <div>
+        <p class="sub">Subscribe for our Game Updates</p>
+        <p>Aptech Games</p>
+        <p class="get">Get entertained with more of our games coming up soon.</p>
+        <form action="">
+          <input type="email" class="form-control" placeholder="Your email address" required id="input">
+          
+            
+    <!-- Button trigger modal -->
+
+   
+          <button type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Subscribe
+              </button>
+              
+            <!-- Modal -->
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 style="color: green;">Subscribed Successfully</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+        </form>
+        
+    </div>
+  
+      <div>
+        <img src="../static/img/mailbox.png" alt="No_images">
+      </div>
+  
+  
+
+    </section>
+
+
+<!-- Ends Here -->
+
+
+<!-- Footer -->
+
+
+<div class="container-fluid" id="footer">
+    <footer class="row row-cols-7 py-5  border-top  py-10" >
+      
+      
+      <aside class="copyright">
+        <p>@ 2025 Aptech Project. All rights reserved</p>
+  
+      </aside>
+      
+    </footer>
+</div>   
+  <!-- Ends Here -->
+
+{% endblock%}

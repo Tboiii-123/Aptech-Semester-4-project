@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+}
+form{
+    border-color: whitesmoke;
+    border-style: solid;
+    height: 770px;
+    border-radius: 30px;
+    width: 450px;
+    
+    box-shadow: 20px 10px 20px gray;
+    margin-bottom: 50px;
+    
+    
+    
+}
+@media(max-width:600px){
+ form{
+    width: 360px;
+    
+ }   
+}
+input{
+    padding: 10px 49px;
+    
+    border-radius: 30px;
+    
+        
+    text-align: start;
+    
+}
+
+    
+#btn{
+        padding:10px 109px;
+     border-radius: 30px; 
+     
+     margin-right:20px ;
+        color: black;
+ }
+ 

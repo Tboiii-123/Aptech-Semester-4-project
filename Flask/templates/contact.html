@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+    
+    {% block title%}
+            Contact Us
+    {% endblock%}
+    
+
+    
+{% block css%}
+        
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">  
+   
+{% endblock%}
+
+
+
+{% block content%}
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+{% endwith %}
+
+{% include 'nav.html' %}
+
+
+
+<!-- Section1 -->
+<section class="section1">
+    <div>
+        <h1>Contact Us</h1>
+          
+        
+    </div>
+
+</section>
+<!-- Ends Here -->
+
+
+<!-- Section2 -->
+
+<section class="section2">
+    <center>
+        <aside>
+            <div id="form">
+                        
+                        <h1>Give a Feedback</h1> 
+                            
+                            <form action="">
+                                <label for="" class="form-label">Name</label>
+                                <input type="text" class="form-control my-2" placeholder="Input a Name" required >
+
+    
+                                <label for="" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control my-2" placeholder="Username" required >
+
+       
+                                
+                                <label for="" class="form-label">Email</label><br>
+       
+
+                                <input type="text" class="form-control my-2" placeholder="Username" required >
+
+       
+       
+                                <label for="" class="form-label">Message</label><br>
+                                <textarea name="" id="" cols="30" rows="5"></textarea>
+                                <input type="submit" class="form-control submit" id='submit'  value="Send Message" style="background-color:rgb(38, 102, 161);
+                                ;color:white;">
+
+                            </form>
+                            
+
+
+            </div>
+
+            <div id="second">
+                <div >
+                    <h1>Get In touch</h1><br>
+                    <h1>Mail</h1>
+                    <p>Lawalhussein775@gmail.com</p>
+                    <p>fiyinfolouwa@gmail.com</p>
+                    <p>Akinwoyeadedotun@gmail.com</p>
+                    <p>Pascalobiohar@gmail.com</p>
+                    
+                    <h1>Number</h1>
+                    <p>09035014430</p>
+                    <p>09034938736</p>
+                    <p>0936728927</p>
+                    <p>09126728902</p>
+                    <h1>Address</h1>
+                    <p>2 Maryland,Close Idiroko Bustop</p>
+                
+                      </div>
+                    
+                
+            </div>
+        </aside>
+        
+    </center>
+    
+</section>
+<!-- Ends Here -->
+
+
+
+
+<!-- Footer -->
+
+
+<div class="container-fluid" id="footer">
+  <footer class="row row-cols-7 py-5  border-top  py-10" >
+    
+    
+    <aside class="copyright">
+      <p>@ 2025 Aptech Project. All rights reserved</p>
+
+    </aside>
+    
+  </footer>
+
+</div>
+  
+<!-- Ends Here -->
+
+
+<script>
+
+
+document.getElementById("submit").addEventListener("click", function() {
+    alert("Fdeedback Sent Successfully!!!!");
+  });
+
+</script>
+
+ {% endblock %}

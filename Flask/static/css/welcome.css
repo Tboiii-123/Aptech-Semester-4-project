@@ -1,0 +1,73 @@
+
+.section1{
+    
+    
+    background-image: url("../img/game4.avif");
+        
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.section1 div{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 45%;
+    
+    color: white;
+    opacity: 1;
+    
+}
+
+.section1 div a{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds the floating shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 3s infinite ease-in-out; /* Float animation */
+       
+}
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Default position */
+    }
+    50% {
+      transform: translateY(-10px); /* Moves up slightly */
+    }
+  }
+
+  @media(max-width:800px){
+    .section1{
+    
+        
+        background-image: url("../img/game4.avif");
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+    
+    .section1 div{
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 40%;
+        
+        color: white;
+        opacity: 1;
+        
+    }
+    
+  }
+/* Ends Here */
+
+/* Section2 */
+.section2{
+    margin-top: 100px;
+}
+.section2 p{
+font-size: 30px;
+text-align: center;
+font-style: italic;
+}
+
+/* Ends Here */

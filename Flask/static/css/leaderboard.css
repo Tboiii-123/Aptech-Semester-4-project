@@ -1,0 +1,39 @@
+
+/* Body */
+body { 
+    
+    font-family: Arial, sans-serif; 
+    
+    text-align: center; }
+/* Table */
+
+.section1{
+    margin-top: 100px;
+}
+ table {
+    
+    
+width: 80%; 
+margin: auto;
+    
+
+
+
+}
+        
+ table,th, td { 
+    padding: 10px;
+    border-collapse: collapse;
+    border: 1px solid black;
+      
+     }
+
+th { 
+    
+background-color:rgb(38, 102, 161);
+
+
+    color: white;
+ }
+
+ 

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Section1 */
+
+.section1{
+    
+    background-image: url('../img/intouch.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.section1 div{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    
+    color: white;
+    opacity: 1;
+    
+}
+
+
+.section1 div h1{
+    font-size: 50px;
+}
+
+.section1 div  p{
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+}
+
+@media(max-width:600px){
+    .section1{
+    
+        
+        height: 550px;
+    }
+    
+    .section1 div{
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 30%;
+        
+        color: white;
+        opacity: 1;
+        
+    }
+    .section1 div h1{
+        font-size: 30px;
+    }
+    .section1 div  p{
+        font-size: 20px;
+    }
+    
+    
+}
+
+/* Ends Here */
+
+
+
+
+
+/* Section2 */
+
+.section2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.section2 center aside{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 center aside #form{
+    background-color:rgb(38, 102, 161);
+
+    padding: 50px;
+    
+    border-radius: 5%;
+    height: 680px;
+    width: 40%;
+    color: white;
+
+}
+
+
+
+.section2 center aside #form form label {
+    margin-left: -70%;
+}
+
+.section2 center aside #form form {
+    border: 1px solid black;
+    
+    
+    padding: 50px;
+    background-color:rgb(38, 102, 161);
+
+
+    width: 100%;
+}
+
+
+.section2 center aside #form form textarea {
+    width: 100%;
+}
+.section2 center aside #second {
+    background-color:rgb(38, 102, 161);
+color: white;
+    padding: 50px;
+    
+    border-radius: 5%;
+    height: 750px;
+    width: 25%;
+
+
+}
+
+.section2 center aside #second div #image img {
+    padding-left: 20px;
+
+}
+
+@media(max-width:1000px){
+    .section2 center aside #form{
+        background-color:rgb(38, 102, 161);
+    
+        padding: 50px;
+        
+        border-radius: 5%;
+        height: 650px;
+        width: 50%;
+    
+    }
+    
+    .section2 center aside #second {
+        background-color:rgb(38, 102, 161);
+        padding: 50px;
+        
+        border-radius: 5%;
+        height: 650px;
+        width: 35%;
+    
+    
+    }
+    
+}
+
+@media(max-width:800px){
+
+    .section2 center aside{
+        display: block;
+        margin: 5%;
+        
+    }
+    
+    .section2 center aside #form{
+        background-color:rgb(38, 102, 161);
+    
+        padding: 10px;
+        
+        border-radius: 5%;
+        height: 650px;
+        width: 100%;
+    
+    }
+
+    .section2 center aside #form form {
+        border: none;
+        
+        
+        padding: 10px;
+        background-color:rgb(38, 102, 161);
+    
+        width: 100%;
+    }
+
+    .section2 center aside #second {
+        
+        display: none;
+    
+    
+    }
+    
+}
+
+
+/* Ends Here */
+
+
+
+
+
+
+
+/* Footer */
+#footer{
+    
+    background-color:rgb(38, 102, 161);
+
+    color: white;
+    padding-left: 10%;
+}
+
+#footer footer div ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#footer footer div p img{
+    padding-left: 20px;
+}
+
+
+@media(max-width:600px){
+    #footer{
+    
+        
+        color: white;
+        padding-left: 5%;
+    }
+    
+}
+/* Ends Here */
+
+
+/* Copyright */
+#footer aside p {
+    text-align: center;
+    
+}
+/* Ends Here */

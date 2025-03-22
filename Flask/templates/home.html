@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+    
+{% block title%}
+Home
+{% endblock%}
+
+
+
+{% block css%}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">  
+
+{% endblock%}
+
+
+{%block content%}
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+{% endwith %}
+
+
+{% include 'nav.html' %}
+
+
+
+<!-- Section1 -->
+<div class="guess">
+    
+<p>Welcome <b>{{username}}</b></p>    
+
+</div>
+
+
+<section class="section1">
+
+        <div class="todoapp">
+            
+ 
+        <p>I am thinking of a game between 1 -20</p>
+        
+        <p>Can you guess it?</p>
+        <form action="" method="post">
+            <center>
+                <input type="text" name="guess"><br>
+
+            <button type="submit">Guess</button>
+
+            </center>
+            
+        </form>
+        <p >{{message}}</p>
+        
+        
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+
+<div class="container-fluid" id="footer">
+    <footer class="row row-cols-7 py-5  border-top  py-10" >
+      
+      
+      <aside class="copyright">
+        <p>@ 2025 Aptech Project. All rights reserved</p>
+  
+      </aside>
+      
+    </footer>
+</div>   
+  <!-- Ends Here -->
+  
+
+{%endblock%}

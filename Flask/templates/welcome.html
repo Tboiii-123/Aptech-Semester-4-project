@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+    
+{% block title%}
+Welcome
+{% endblock%}
+
+
+{% block css%}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">  
+
+{% endblock%}
+
+
+{%block content%}
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+{% endwith %}
+
+{% include 'nav.html' %}
+
+
+
+
+<!-- Section1 -->
+
+<section class="section1">
+    <div>
+        <a href={{url_for('index')}} class="btn btn-success btn-lg">Start Game</a>
+
+    </div>    
+        
+                 
+
+</section>
+<!-- Ends Here -->
+
+
+<section class="section2">
+    <p>Number Guessing Game!!!!!!</p>
+
+</section>
+
+
+
+
+{%endblock%}

@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Ends Here */
+
+
+
+
+/* Section 1 */
+.section1 #background{
+    height: 500px;
+
+    
+}
+
+
+
+.section1 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.section1 .container #profile{
+    border-radius: 100%;
+    height: 160px;
+    width: 13%;
+    margin-top: -70px;
+}
+
+.section1 .upload{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .upload #upload{
+    padding: 20px;
+    background-color: rgb(68, 68, 230);
+}
+
+
+@media(max-width:900px){
+    .section1 #background{
+        height: 400px;
+    
+        
+    }
+    
+    
+.section1 .container #profile{
+    border-radius: 100%;
+    height: 160px;
+    width: 40%;
+}
+
+}
+
+/* Ends Here */
+
+
+
+/* Section 2 */
+
+
+.section2{
+    
+    margin-top: 150px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.section2 .form{
+    width: 50%;
+    
+    padding: 5%;
+
+    border-color: whitesmoke;
+            
+    border-style: solid;
+    
+    height: 570px;
+
+    
+    border-radius: 30px;
+                
+    box-shadow: 20px 10px 20px gray;
+                   
+}
+
+.section2 .form .button{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section2 .form .button button{
+
+    margin-left: 20px;
+}
+
+.section2 #personal{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width:900px){
+
+    .section2 .form{
+        padding: 2%;
+        width: 90%;
+        height: 680px;
+    
+                       
+    }
+    
+}
+
+
+/* Ends Here */
+
+
+/* Section 5 */
+
+
+.section5{
+    margin-top: 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(38, 102, 161);
+color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 150px;
+    
+}
+
+.section5 div .sub{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.section5 div .get{
+    font-size: 20px;
+}
+
+.section5 div #input{
+    width: 40%;
+}
+
+.section5 div button{
+    margin-top: 20px;
+
+}
+@media(max-width:800px){
+    .section5 div #input{
+        width: 80%;
+    }
+    
+.section5{
+    
+    display: block;
+    padding-bottom: 50px;
+    
+    
+}
+.section5 div img{
+    display: none;
+}
+   
+}
+
+
+
+
+
+/* Footer */
+#footer{
+    
+    background-color:rgb(38, 102, 161);
+
+    color: white;
+    padding-left: 10%;
+}
+
+#footer footer div ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+#footer footer div p img{
+    padding-left: 20px;
+}
+
+
+@media(max-width:600px){
+    #footer{
+    
+        
+        color: white;
+        padding-left: 5%;
+    }
+    
+}
+/* Ends Here */
+
+
+/* Copyright */
+#footer aside p {
+    text-align: center;
+    
+}
+/* Ends Here */

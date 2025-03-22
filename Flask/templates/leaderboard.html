@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+    
+{% block title%}
+Leaderboard
+{% endblock%}
+
+
+
+{% block css%}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/leaderboard.css') }}">  
+
+{% endblock%}
+
+
+{% block content%}
+
+
+    {% include 'nav.html' %}
+<section class="section1">
+
+    <h2>🎯 Game Leaderboard 🎯</h2>
+    
+    
+    <table border="3" >
+        <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Games Played</th>
+            <th>Total Attempts</th>
+            <th>Score</th>
+            
+        </tr>
+        {% for user in leaderboard %}
+<tr>
+    <td>{{ loop.index }}</td>  <!-- loop.index starts from 1 -->
+    <td>{{ user.user.username }}</td>
+    <td>{{ user.games_played }}</td>
+    <td>{{ user.total_attempts }}</td>
+    <td>{{ user.total_wins }}</td>
+    
+</tr>
+{% endfor %}
+
+    </table>
+
+
+  
+
+</section>
+
+
+
+{% endblock%}
